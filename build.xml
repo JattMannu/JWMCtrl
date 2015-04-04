@@ -13,9 +13,11 @@
 			<fileset dir="${dist.dir}"/>
 			<fileset dir="${doc.dir}"/>
 		</delete>
-		<delete failonerror="false" file="${project.name}-${project.version}.jar"/>
-		<delete failonerror="false" file="${project.name}-${project.version}-javadoc.jar"/>
-		<delete failonerror="false" file="${project.name}-${project.version}-all.jar"/>
+		<delete failonerror="false" file="${lib.dir}/${project.name}-*.jar"/>
+		<delete failonerror="false" file="${project.name}-*.jar"/>
+		<delete failonerror="false" file="${project.name}-*-javadoc.jar"/>
+		<delete failonerror="false" file="${project.name}-*-all.jar"/>
+		<delete failonerror="false" file="${project.name}-*.zip"/>
 	</target>
 	
 	<target name="prepare">
@@ -93,14 +95,14 @@
 			<fileset dir=".">
 				<include name="${lib.dir}/commons-lang3-3.1.jar" />
 				<include name="${lib.dir}/java-getopt-1.0.14.jar" />
-				<include name="${lib.dir}/jna-3.5.2.jar" />
-				<include name="${lib.dir}/platform-3.5.2.jar" />
+				<include name="${lib.dir}/jna-4.0.0.jar" />
+				<include name="${lib.dir}/jna-platform-4.0.0.jar" />
 				<include name="${lib.dir}/${project.name}-${project.version}.jar" />
 			</fileset>
 			<fileset dir=".">
 				<include name="ChangeLog.txt" />
+				<include name="README.md" />
 				<include name="jwmctrl" />
-				<include name="readme.txt" />
 			</fileset>
 		</zip>
 	</target>
