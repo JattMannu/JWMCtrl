@@ -1,0 +1,33 @@
+04/04/2015 - 1.0.0-beta4
+  1. Add option '-Y <WIN>' to iconify (minimize) the window.
+  2. Add option '-S' to list windows in stacking order (bottom to above).
+  3. Add option '-j' to list current desktop.
+  4. Add option '-r <WIN> -y <MVARG>' to resize and move the window around
+     the desktop, then reactivate. 
+  5. Add option '-E <WIN>' to show the title of the window.
+  6. Fixed bugs for 64bit system.
+  7. Fixed bugs when use '-i' option to interpret <WIN> as a numerical
+     window ID.
+
+06/07/2013 - 1.0.0-beta3
+  1. Upgrade jna-3.5.2.jar and platform-3.5.2.jar to version 4.0.0.
+
+21/06/2013 - 1.0.0-beta2
+  1. Fixed window select bug.
+
+02/06/2013 - 1.0.0-beta
+  1. Performance optimization.
+
+02/06/2013 - 1.0.0-alpha4
+  1. Fix encoding problem under Mac OS X.
+
+02/06/2013 - 1.0.0-alpha3
+  1. Fix window list bug under Linux x64 and Mac OS X.
+  2. Fix desktop list bug under Linux x64 and Mac OS X.
+
+01/06/2013 - 1.0.0-alpha2
+  1. Fix java-getopt lib's i18n bug.
+  2. set jna.library.path to '/opt/X11/lib' for Mac OS X if it's not specified.
+
+25/05/2013 - 1.0.0-alpha
+  First version.
